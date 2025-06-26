@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html{
+    /* background: linear-gradient(#6e65ac ,#7bc2af,#00feba,); */
+    /* background: #304f56; */
+    background: url(./images/nik-4xCmas3Gnvo-unsplash.jpg) no-repeat center center fixed;
+    background-size: cover;
+    
+}
+.card{
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center;  */
+    text-align: center;             /*A a yd chhe ne, surya ne vachhe lavva ma fati ry ti*/
+    /* height: 60vh; */
+    width: 90%;
+    max-width: 470px;
+    border: 0.5px solid black;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: #000000;
+    border-radius: 20px;
+    margin: 100px auto 0px;
+    padding: 40px 35px;
+}
+
+.search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.search input{
+    border: 0;
+    outline: 0;
+    color: #000000;
+    background: #ebfffc;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 22px;
+}
+input::placeholder{
+    color: black;
+}
+.search button{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+
+    color: white;
+    border-radius: 50px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.search button img{
+    text-align: center;
+    width: 22px;
+}
+
+ .weather-icon{
+    width: 170px;
+    margin-top: 30px;
+    /* text-align: center; */
+    /* margin: 0 auto */
+} 
+
+.weather h1 {
+    font-size: 80px;
+    font-weight: 500;
+    text-align: center;
+
+}
+
+.weather h2{
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+    text-align: center;
+
+}
+
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding: 0 20px;
+}
+
+.details .col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.details .col img{
+    width: 40px;
+    margin-right: 10px;
+}
+
+.humidity, .wind{
+    font-size: 28px;
+    margin-top: -6px;
+}
+
+.original-details{
+    font-size: 20px;
+    margin-top: 2px;
+}
+
+/* .weather {
+    display: none;
+} */
+
+.error{
+    font-size: 20px;
+    margin-left: 0px;
+    margin-top: 10px;
+    text-align: left;
+    display: none;
+
+}
+@media screen and (max-width:300px) {
+    .card{
+        width: 100%;
+    }
+    
+}
